@@ -53,7 +53,23 @@ class ViewController: UIViewController {
                 label.isHidden = false
             }
         }
+        
+        for i in gameState
+        {
+            if i == 0
+            {
+                gameIsActive = true
+                break
+            }
+        }
+        if gameIsActive == false
+        {
+            label.text = "IT Was A DRAW"
+            label.isHidden = false
+            playAgainButton.isHidden = false
+        }
     }
+    
     
     
 
